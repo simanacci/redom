@@ -1,0 +1,22 @@
+[package]
+name = "redfrom"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+serde = { version = "1.0.190", features = [ "derive" ] }
+serde_json = { version = "1.0.108", features = [ "raw_value" ] }
+uuid = { version = "1.5.0", features = [ "v4", "fast-rng", "serde" ] }
+chrono = "0.4.31"
+actix-web = "4.4.0"
+anyhow = "1.0.75"
+redis = { version = "0.24.0", default-features = false, features = ["tokio-comp", "connection-manager"] }
+log = "0.4.20"
+env_logger = "0.10.0"
+socket2 = "0.5.5"
+tempfile = "3.8.1"
+rand = "0.8.5"
+dotenv = "0.15.0"
+tokio = "1.33.0"
